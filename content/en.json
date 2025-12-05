@@ -1,0 +1,123 @@
+{
+  "site": {
+    "title": "Ahmed Metwaly Development",
+    "shortName": "AMD",
+    "description": "Premium real estate developer in Egypt specializing in residential and commercial properties.",
+    "url": "https://amd.eg",
+    "phone": "+201040245555",
+    "email": "info@amd.eg",
+    "address": {
+      "street": "Rock Eden Mall, Zewail Street",
+      "area": "October Gardens",
+      "city": "6th of October City",
+      "region": "Giza",
+      "country": "Egypt"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "services": "Services",
+    "news": "News",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Premium Real Estate Development",
+      "title": "Building Dreams, Crafting Futures",
+      "description": "Discover exceptional living spaces and commercial properties designed with excellence. Ahmed Metwaly Development brings your vision to life.",
+      "cta_primary": "Explore Projects",
+      "cta_secondary": "Contact Us"
+    },
+    "stats": {
+      "years": { "value": 15, "label": "Years Experience" },
+      "projects": { "value": 50, "label": "Projects Delivered" },
+      "families": { "value": 2000, "label": "Happy Families" },
+      "area": { "value": 500000, "label": "Built Area (m²)" }
+    },
+    "projects_section": {
+      "tagline": "Our Portfolio",
+      "title": "Featured Projects",
+      "description": "Explore our signature developments that redefine modern living and working spaces."
+    },
+    "services_section": {
+      "tagline": "What We Offer",
+      "title": "Comprehensive Real Estate Services",
+      "description": "From concept to completion, we provide end-to-end real estate solutions tailored to your needs."
+    },
+    "cta": {
+      "title": "Ready to Find Your Perfect Property?",
+      "description": "Contact our team today and let us help you discover the ideal space for your home or business.",
+      "button": "Get In Touch"
+    }
+  },
+  "projects": [
+    {
+      "id": "rock-eden",
+      "name": "Rock Eden Residences",
+      "type": "Residential",
+      "description": "Luxury apartments with panoramic views in the heart of October Gardens.",
+      "price": "Starting from 2.5M EGP",
+      "image": "assets/images/projects/project-1.jpg"
+    },
+    {
+      "id": "zewail-business",
+      "name": "Zewail Business Park",
+      "type": "Commercial",
+      "description": "Modern office spaces designed for productivity and success.",
+      "price": "Fully Equipped",
+      "image": "assets/images/projects/project-2.jpg"
+    },
+    {
+      "id": "october-heights",
+      "name": "October Heights",
+      "type": "Villas",
+      "description": "Exclusive villa community with private gardens and premium amenities.",
+      "price": "Starting from 8M EGP",
+      "image": "assets/images/projects/project-3.jpg"
+    }
+  ],
+  "services": [
+    {
+      "id": "development",
+      "title": "Property Development",
+      "description": "Residential and commercial projects built to the highest standards."
+    },
+    {
+      "id": "advisory",
+      "title": "Investment Advisory",
+      "description": "Expert guidance for real estate investment opportunities."
+    },
+    {
+      "id": "management",
+      "title": "Property Management",
+      "description": "Complete management services for your real estate assets."
+    }
+  ],
+  "contact": {
+    "title": "Contact Us",
+    "tagline": "Get In Touch",
+    "description": "We'd love to hear from you. Reach out to discuss your real estate needs.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been sent successfully.",
+      "subjects": ["General Inquiry", "Project Information", "Investment Opportunity", "Careers"]
+    }
+  },
+  "footer": {
+    "description": "Ahmed Metwaly Development is a leading real estate company committed to building exceptional living and working spaces across Egypt.",
+    "quick_links": "Quick Links",
+    "featured_projects": "Featured Projects",
+    "contact_us": "Contact Us",
+    "copyright": "© 2024 Ahmed Metwaly Development. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
