@@ -1,0 +1,21 @@
+# AMD Website - robots.txt
+# https://amd.eg
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://amd.eg/sitemap.xml
+
+# Disallow admin/private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow all crawlers to access CSS/JS/Images
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1

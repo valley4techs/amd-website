@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Ahmed Metwaly Development</title>
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--spacing-8);
+        }
+
+        .error-page__code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            line-height: 1;
+            margin-bottom: var(--spacing-4);
+        }
+
+        .error-page__title {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--spacing-4);
+        }
+
+        .error-page__description {
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-8);
+            max-width: 400px;
+        }
+
+        .error-page__actions {
+            display: flex;
+            gap: var(--spacing-4);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png">
+</head>
+
+<body>
+    <main class="error-page">
+        <div>
+            <div class="error-page__code">404</div>
+            <h1 class="error-page__title">Page Not Found</h1>
+            <p class="error-page__description">Sorry, the page you're looking for doesn't exist or has been moved. Let's
+                get you back on track.</p>
+            <div class="error-page__actions">
+                <a href="./index.html" class="btn btn--primary">Go to Homepage</a>
+                <a href="./contact.html" class="btn btn--outline">Contact Us</a>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
