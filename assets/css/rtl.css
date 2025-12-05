@@ -1,0 +1,252 @@
+/* ============================================
+   AMD RTL (Right-to-Left) Overrides
+   For Arabic language support
+   ============================================ */
+
+/* ========== Base RTL ========== */
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ========== Typography Adjustments ========== */
+[dir="rtl"] body {
+    font-family: var(--font-arabic);
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+    font-family: var(--font-arabic);
+}
+
+/* Slightly increase line height for Arabic */
+[dir="rtl"] p,
+[dir="rtl"] li {
+    line-height: var(--line-height-relaxed);
+}
+
+/* ========== Layout Mirroring ========== */
+/* Flex direction reversal for specific layouts */
+[dir="rtl"] .flex--row-ltr {
+    flex-direction: row-reverse;
+}
+
+/* Grid alignment */
+[dir="rtl"] .grid {
+    direction: rtl;
+}
+
+/* ========== Navigation ========== */
+[dir="rtl"] .header__nav {
+    /* margin-inline-start: auto; */
+    /* margin-inline-end: 0; */
+    margin-inline: auto;
+}
+
+[dir="rtl"] .mobile-menu {
+    right: auto;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+[dir="rtl"] .mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+/* ========== Icons That Need Mirroring ========== */
+[dir="rtl"] .icon--mirror {
+    transform: scaleX(-1);
+}
+
+/* Arrows, chevrons, etc. */
+[dir="rtl"] .icon-arrow-right,
+[dir="rtl"] .icon-chevron-right,
+[dir="rtl"] .icon-external-link {
+    transform: scaleX(-1);
+}
+
+/* ========== Form Elements ========== */
+[dir="rtl"] .form-input,
+[dir="rtl"] .form-textarea,
+[dir="rtl"] .form-select {
+    text-align: right;
+}
+
+/* Checkbox/Radio alignment */
+[dir="rtl"] .form-checkbox,
+[dir="rtl"] .form-radio {
+    flex-direction: row-reverse;
+}
+
+/* Select dropdown arrow */
+[dir="rtl"] .form-select {
+    background-position: left var(--spacing-4) center;
+    padding-left: var(--spacing-10);
+    padding-right: var(--spacing-4);
+}
+
+/* ========== Buttons ========== */
+[dir="rtl"] .btn {
+    flex-direction: row-reverse;
+}
+
+/* ========== Cards ========== */
+[dir="rtl"] .card__footer {
+    flex-direction: row-reverse;
+}
+
+/* ========== Features ========== */
+[dir="rtl"] .feature {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .feature__content {
+    text-align: right;
+}
+
+/* ========== Contact Info ========== */
+[dir="rtl"] .contact-info__item {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+/* ========== Testimonials ========== */
+[dir="rtl"] .testimonial__quote {
+    padding-inline-start: 0;
+    padding-inline-end: var(--spacing-6);
+}
+
+[dir="rtl"] .testimonial__quote::before {
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+}
+
+[dir="rtl"] .testimonial__author {
+    flex-direction: row-reverse;
+}
+
+/* ========== Breadcrumb ========== */
+[dir="rtl"] .breadcrumb {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .breadcrumb__separator {
+    transform: scaleX(-1);
+}
+
+/* ========== Pagination ========== */
+[dir="rtl"] .pagination {
+    flex-direction: row-reverse;
+}
+
+/* ========== Hero ========== */
+[dir="rtl"] .hero__content {
+    text-align: right;
+}
+
+[dir="rtl"] .hero__actions {
+    justify-content: flex-end;
+}
+
+/* ========== Lists ========== */
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+    padding-inline-start: var(--spacing-6);
+    padding-inline-end: 0;
+}
+
+/* ========== Blockquote ========== */
+[dir="rtl"] blockquote {
+    border-inline-start: none;
+    border-inline-end: var(--border-width-thick) solid var(--color-primary);
+    padding-inline-start: 0;
+    padding-inline-end: var(--spacing-6);
+}
+
+/* ========== Tables ========== */
+[dir="rtl"] table {
+    direction: rtl;
+}
+
+[dir="rtl"] th,
+[dir="rtl"] td {
+    text-align: right;
+}
+
+/* ========== Scroll Indicators ========== */
+[dir="rtl"] .scroll-indicator {
+    right: auto;
+    left: var(--spacing-4);
+}
+
+/* ========== Footer ========== */
+[dir="rtl"] .footer__grid {
+    direction: rtl;
+}
+
+[dir="rtl"] .footer__social {
+    flex-direction: row-reverse;
+}
+
+/* ========== Animations ========== */
+/* Slide in from right for RTL */
+[dir="rtl"] .animate-slide-in {
+    animation-name: slideInRight;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ========== Specific Component Overrides ========== */
+/* Project gallery thumbnails */
+[dir="rtl"] .gallery__thumbs {
+    flex-direction: row-reverse;
+}
+
+/* Timeline */
+[dir="rtl"] .timeline__item::before {
+    right: auto;
+    left: 0;
+}
+
+/* Progress bars */
+[dir="rtl"] .progress-bar {
+    direction: rtl;
+}
+
+[dir="rtl"] .progress-bar__fill {
+    transform-origin: right;
+}
+
+/* ========== Utility Overrides ========== */
+/* Text alignment utilities for RTL */
+[dir="rtl"] .text-start {
+    text-align: right;
+}
+
+[dir="rtl"] .text-end {
+    text-align: left;
+}
+
+/* Margin/Padding start/end overrides are handled by CSS logical properties */
+/* which automatically flip in RTL, so no overrides needed for those */
+
+/* ========== Print Styles ========== */
+@media print {
+    [dir="rtl"] body {
+        direction: rtl;
+    }
+}
